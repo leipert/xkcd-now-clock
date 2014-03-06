@@ -20,8 +20,8 @@ The `RotateWallpaper.ps1` determines which Image should be used and changes the 
 The `install.bat` allows the following parameters.
 * `download`: Images will be re-downloaded from the xkcd servers
 * `convert`: Images will be converted again to jpg.
-   * Without any further specified options you will get the raw images:
-   ![normal](http://explainxkcd.com/wiki/images/1/14/now.gif)
    * Optionally you can specify `label`, which will add your local time and UTC time in the bottom right corner.
-   * With `clock` specified, a little red dot will be added to the picitures, showing your local time. ![normal](http://explainxkcd.com/wiki/images/1/14/now.gif)
-   * With `center` specified, your time-zone will always be at the 12 'o clock position of the image ![normal](http://explainxkcd.com/wiki/images/1/14/now.gif)
+   * Without any further specified options you will get the raw images:
+   ![normal](https://raw.github.com/leipert/xkcd-now-clock/master/doc/normal.gif)
+   * With `clock` specified, a little red dot will be added to the picitures, showing your local time. Additionally you can specify `ampm`, so that the dot will behave 12-hour-like instead of 24-hour-like. ![clock](https://raw.github.com/leipert/xkcd-now-clock/master/doc/clock.gif)
+   * With `center` specified, your time-zone will always be at the 12 'o clock position of the image ![center](https://raw.github.com/leipert/xkcd-now-clock/master/doc/center.gif)
