@@ -180,7 +180,7 @@ REM Creation of template file for Task Scheduler
    type templates\template2.xml >> XKCD-Now-Clock.xml
    echo ^<UserId^>%COMPUTERNAME%\%username%^</UserId^> >> XKCD-Now-Clock.xml
    type templates\template3.xml >> XKCD-Now-Clock.xml
-   echo ^<Arguments^>%~dp0invis.vbs %~dp0rotate.bat^</Arguments^> >> XKCD-Now-Clock.xml
+   echo ^<Arguments^>%~dp0invis.vbs powershell.exe -File "%~dp0RotateWallpaper.ps1"^</Arguments^> >> XKCD-Now-Clock.xml
    type templates\template4.xml >> XKCD-Now-Clock.xml
 
 REM Logging
@@ -189,4 +189,5 @@ REM Logging
    echo Finished download and conversion
    echo Just import the created task file ^("XKCD-Now-Clock.xml"^) with the Task Scheduler
    
+   call powershell.exe -File "%~dp0RotateWallpaper.ps1"
 endlocal
