@@ -42,7 +42,7 @@ elseif ($elapsed -lt 3150){ $m = "45";} # < 52.5 min
 else { $m = "00"; $utc = $utc.AddHours(1);} # > 52.5 min
 
 # Create filename (for example 12h15m.jpg)
-$file=($utc).ToString("hh") + "h" + $m + "m.jpg";
+$file=($utc).ToString("HH") + "h" + $m + "m.jpg";
 
 # Set Wallpaper
 write-output ("Set wallpaper to: " + $file);
