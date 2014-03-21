@@ -179,8 +179,12 @@ REM Creation of template file for Task Scheduler
    echo ^<Author^>%COMPUTERNAME%\%username%^</Author^> >> XKCD-Now-Clock.xml
    type templates\template2.xml >> XKCD-Now-Clock.xml
    echo ^<UserId^>%COMPUTERNAME%\%username%^</UserId^> >> XKCD-Now-Clock.xml
+   type templates\template2a.xml >> XKCD-Now-Clock.xml
+   echo ^<UserId^>%COMPUTERNAME%\%username%^</UserId^> >> XKCD-Now-Clock.xml
+   type templates\template2b.xml >> XKCD-Now-Clock.xml
+   echo ^<UserId^>%COMPUTERNAME%\%username%^</UserId^> >> XKCD-Now-Clock.xml
    type templates\template3.xml >> XKCD-Now-Clock.xml
-   echo ^<Arguments^>%~dp0invis.vbs powershell.exe -File "%~dp0RotateWallpaper.ps1"^</Arguments^> >> XKCD-Now-Clock.xml
+   echo ^<Arguments^>"%~dp0invis.vbs" powershell.exe -File "%~dp0RotateWallpaper.ps1"^</Arguments^> >> XKCD-Now-Clock.xml
    type templates\template4.xml >> XKCD-Now-Clock.xml
 
 REM Logging
